@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .error{
+     border: 2px solid red;
+ }
+
+ .error:hover{
+     background: yellow;
+ }
