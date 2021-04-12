@@ -1,0 +1,9 @@
+<h1> <%= @destination.name %> </h1>
+
+<p> Country: <%= @destination.country %> </p>
+<p>Most Recent 5 Posts: <% @destination.recent_posts.each do |recent_post|%> </p>
+                            <p><%= link_to recent_post.title, post_path(recent_post.id) %> </p>
+                            <% end %>
+<p>Featured Destination: <%=  %> </p>
+<p>Average Age of Visiting Bloggers: <%=  %> </p>
+
